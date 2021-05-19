@@ -1,0 +1,79 @@
+<form [formGroup]="formCadastro" (ngSubmit)="onSubmit()">
+
+    <h3>Cadastre-se</h3>
+
+    <!--PESSOAIS-->
+    <div class="form-group">
+        <h4>Informações pessoais:</h4>
+
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control" id="nome" formControlName="nome">
+
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" class="form-control" id="sobrenome" formControlName="sobrenome">
+
+        <label for="nascimento">Data de nascimento</label>
+        <input type="date" class="form-control" id="nascimento" formControlName="nascimento">
+    </div>
+   <!--CONTATO-->
+    <div class="form-group">
+        <h4>Informações para contato:</h4>
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" class="form-control" id="telefone" formControlName="telefone">
+
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" formControlName="email">
+    </div>
+   <!--ENDEREÇO-->
+    <div class="form-group">
+        <h4>Endereço</h4>
+
+        <label for="bairro">Bairro</label>
+        <input type="text" class="form-control" id="bairro" formControlName="bairro">
+
+        <label for="estado">Estado</label>
+        <select class="form-control" id="estado" formControlName="estado">
+            <option value="am">Amazonas</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="sp">São Paulo</option>
+        </select>
+    </div>
+   <!--ADICIONAIS-->
+    <div class="form-group">
+        <h4>Adicionais</h4>
+   <!--HABILITAÇÃO-->
+        <label for="cnh">Tipo de habilitação</label>
+        <div class="form-check">
+            <label class="form-check-label" for="inativo">A</label>
+            <input type="checkbox" class="form-check-input" id="a" name="cnh" formControlName="cnh">
+        </div>
+
+        <div class="form-check">
+            <label class="form-check-label" for="inativo">B</label>
+            <input type="checkbox" class="form-check-input" id="b" name="cnh" formControlName="cnh">
+        </div>
+        <div class="form-check">
+            <label class="form-check-label" for="inativo">C</label>
+            <input type="checkbox" class="form-check-input" id="c" name="cnh" formControlName="cnh">
+        </div>
+        <div class="form-check">
+            <label class="form-check-label" for="inativo">Não Possuo</label>
+            <input type="checkbox" class="form-check-input" id="nda" name="cnh" formControlName="cnh">
+        </div>
+   <!--DEFICIENCIA-->
+        <label for="def">Portador de deficiencia?</label>
+        <div class="form-check">
+            <input type="radio" id="true" value="true" name="def" formControlName="def">
+            <label class="form-check-label" for="true">Sim</label>
+        </div>
+
+        <div class="form-check">
+            <input type="radio" id="false" value="false" name="def" formControlName="def">
+            <label class="form-check-label" for="false">Não</label>
+        </div>
+    </div>
+   <!--BOTÕES-->
+    <input type="submit" class="btn btn-primary" value="Enviar">
+    <a href="#" class="btn btn-outline-danger">Voltar</a>
+</form>

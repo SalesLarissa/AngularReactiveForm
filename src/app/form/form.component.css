@@ -1,0 +1,6 @@
+.form-group{
+    margin: 05% 0;
+}
+form .btn{display: flex; justify-content: center;}
+.btn{margin: 02% 0;}
+.btn-primary{width: 100%;}

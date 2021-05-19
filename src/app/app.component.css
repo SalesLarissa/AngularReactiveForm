@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;400;500;600;700&display=swap');
+body{
+    background-image: url(../assets/rosa.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 02%;
+
+    font-family: 'Exo', sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    background-color: white ;
+    width: 70%;
+    padding: 02% 10%;
+    border-radius: 5px;
+}
